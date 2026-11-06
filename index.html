@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#09090b">
+<title>Finanças</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%237b7ff6'/%3E%3Cpath d='M9 21l5-6 4 3 5-7' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+</head>
+<body>
+
+<div id="tela-config" class="centro hidden">
+  <div class="cartao auth">
+    <div class="logo-auth"><span class="logo-mark"></span> Finanças</div>
+    <h2>Falta configurar</h2>
+    <p class="sub">Abra o arquivo <code>js/config.js</code> e preencha a URL e a chave do seu projeto Supabase (Project Settings › API).</p>
+  </div>
+</div>
+
+<div id="tela-login" class="centro hidden">
+  <form id="form-login" class="cartao auth">
+    <div class="logo-auth"><span class="logo-mark"></span> Finanças</div>
+    <p class="sub" id="auth-sub">Entre na sua conta</p>
+    <label id="campo-nome" class="hidden">Seu nome<input name="nome" autocomplete="name"></label>
+    <label>E-mail<input type="email" name="email" required autocomplete="email"></label>
+    <label>Senha<input type="password" name="senha" required minlength="6" autocomplete="current-password"></label>
+    <button type="submit" class="btn pri largo" id="btn-auth">Entrar</button>
+    <p class="msg" id="auth-msg"></p>
+    <p class="alterna"><button type="button" class="lnk" id="link-alterna">Não tem conta? Cadastre-se</button></p>
+    <p class="alterna"><button type="button" class="lnk" id="link-esqueci">Esqueci minha senha</button></p>
+  </form>
+</div>
+
+<div id="app" class="hidden">
+  <aside id="side"></aside>
+  <div id="overlay" data-a="menu"></div>
+  <div id="principal">
+    <div id="topo"></div>
+    <main id="conteudo"></main>
+  </div>
+</div>
+
+<dialog id="modal"></dialog>
+<div id="toast"></div>
+
+<script src="js/core.js"></script>
+<script src="js/pages1.js"></script>
+<script src="js/pages2.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
