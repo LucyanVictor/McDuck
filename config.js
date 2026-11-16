@@ -5,6 +5,6 @@
    NUNCA coloque aqui a chave "service_role" / "secret".
    ===================================================================== */
 window.CONFIG = {
-  SUPABASE_URL: 'https://SEU-PROJETO.supabase.co',
-  SUPABASE_KEY: 'SUA-CHAVE-ANON-OU-PUBLISHABLE'
+  SUPABASE_URL: 'https://namlaqyodpgvcwrpzwib.supabase.co,
+  SUPABASE_KEY: 'sb_publishable_6qlcN2tzF9v1lj00dHXcwA_0p2yu__P'
 };
