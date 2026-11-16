@@ -1,0 +1,17 @@
+{
+  "name": "McDuck",
+  "short_name": "McDuck",
+  "description": "McDuck — sua fortuna organizada",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#08140c",
+  "theme_color": "#08140c",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "icone-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icone-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icone.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icone.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
